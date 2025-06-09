@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deden Hadiguna - Personal Data Core</title>
+
+    <meta name="description" content="Portofolio interaktif Deden Hadiguna, seorang mahasiswa Ilmu Komputer dan AI Developer, dengan keahlian dalam Machine Learning, Deep Learning, dan Web Development.">
+    <meta name="keywords" content="Deden Hadiguna, AI developer, portfolio, machine learning, deep learning, python, javascript, web development, komputer, Telkom University Purwokerto">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dedenhadiguna.github.io/">
+    <meta property="og:title" content="Deden Hadiguna - Personal Data Core">
+    <meta property="og:description" content="Portofolio interaktif Deden Hadiguna, seorang AI Developer dan mahasiswa Ilmu Komputer.">
+    <meta property="og:image" content="assets/social-preview.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Bai+Jamjuree:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="ai-core-style.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="preloader-text">
+            <span class="highlight-blue">Sabar lagi Loading</span><br>
+            <span class="highlight-green">STATUS:</span> <span class="highlight-purple">ONLINE</span>
+        </div>
+        <div class="preloader-bar"></div>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Home: Personal Data Core">Hdiignna Dev</a>
+            <div class="nav-right">
+                <button class="ai-voice-toggle" aria-label="Activate Voice Assistant" title="Voice Assistant" data-active="false">
+                    <i class="fas fa-robot"></i>
+                </button>
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav class="nav-links" id="navbarNav" aria-label="Main Navigation">
+                <a href="#home" class="nav-link active" aria-current="page">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#photos" class="nav-link">Photos</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <canvas id="quantumCanvas" class="quantum-canvas-bg"></canvas>
+
+        <div class="system-status-dashboard">
+            <p>AI Core Status: <span id="ai-status">OFFLINE</span></p>
+            <p>System Uptime: <span id="uptime-display">00:00:00</span></p>
+        </div>
+
+        <section id="home" class="section hero">
+            <div class="hero-content animate-on-scroll">
+                <div class="profile-avatar-frame hero-avatar animate-on-scroll">
+                    <img src="my_profile.jpg" alt="Deden Hadiguna Profile Picture" class="profile-avatar">
+                    <div class="status-indicator online"></div>
+                </div>
+                <h1 class="decrypt-text animate-on-scroll" data-text="Deden Hadiguna" data-aos="fade-in" data-aos-delay="400"><span id="typed-hero-title"></span></h1>
+                <p class="section-subtitle decrypt-text animate-on-scroll" data-text="AI Data Architect" data-aos="fade-up" data-aos-delay="600">
+                    <span class="highlight-blue">AI Data Architect</span>
+                </p>
+                <p class="section-subtitle decrypt-text animate-on-scroll" data-text="Welcome to my Personal Data Core." data-aos="fade-up" data-aos-delay="800">
+                    Welcome to my Personal Data Core.
+                </p>
+                <div class="cta-buttons animate-on-scroll" data-aos="fade-up" data-aos-delay="1000">
+                    <a href="#projects" class="cta-button primary" data-scroll-to="projects">VIEW PROJECTS</a>
+                    <a href="assets/CV-DedenHadiguna.pdf" target="_blank" class="cta-button secondary">DOWNLOAD CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-content animate-on-scroll">
+                <h2 class="section-title-animate decrypt-text animate-on-scroll" data-text="About Core User: Deden Hadiguna" data-aos="fade-up" data-aos-delay="200">About Core User: <span class="highlight-purple">Deden Hadiguna</span></h2>
+                <div class="about-grid">
+                    <div class="profile-terminal-view animate-on-scroll" data-aos="fade-right" data-aos-delay="400">
+                        <div class="profile-header-bar">
+                            <span class="profile-handle">user@system:~#</span>
+                        </div>
+                        <div class="profile-info-display">
+                            <p><span class="highlight-blue">Name:</span> Deden Hadiguna</p>
+                            <p><span class="highlight-blue">Role:</span> AI Developer / CS Student</p>
+                            <p><span class="highlight-blue">Location:</span> Purwokerto, Central Java, Indonesia</p>
+                            <p><span class="highlight-blue">Status:</span> Engaged in Innovation</p>
+                            <p><span class="highlight-blue">Command:</span> <span class="highlight-green">whoami</span></p>
+                            <p>&nbsp;&nbsp;A passionate Computer Science student focused on creating intelligent systems and impactful solutions.</p>
+                        </div>
+                    </div>
+                    <div class="about-text animate-on-scroll" data-aos="fade-left" data-aos-delay="500">
+                        <p class="decrypt-text" data-text="Sebagai mahasiswa Teknik Informatika yang proaktif di Telkom University Purwokerto, saya memiliki ketertarikan mendalam pada Artificial Intelligence, Machine Learning, dan Deep Learning. Komitmen saya adalah untuk menciptakan solusi inovatif yang memberdayakan teknologi." data-decrypt-speed="15">
+                            Sebagai mahasiswa Teknik Informatika yang proaktif di Telkom University Purwokerto, saya memiliki ketertarikan mendalam pada Artificial Intelligence, Machine Learning, dan Deep Learning. Komitmen saya adalah untuk menciptakan solusi inovatif yang memberdayakan teknologi.
+                        </p>
+                        <div class="code-block-snippet">
+                            <p><span class="comment">// Core Directive: Innovation Logic</span></p>
+                            <p><span class="highlight-blue">FUNCTION</span> <span class="highlight-green">generate_solution</span>(<span class="highlight-purple">problem_data</span>):</p>
+                            <p>&nbsp;&nbsp;<span class="highlight-blue">IF</span> (<span class="highlight-green">passion_for_AI</span> <span class="highlight-blue">AND</span> <span class="highlight-green">continuous_learning_protocol</span>):</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight-purple">RETURN</span> <span class="highlight-blue">deploy_optimized_model</span>(<span class="highlight-green">problem_data</span>);</p>
+                            <p><span class="highlight-blue">ELSE</span>:</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="highlight-purple">RETURN</span> <span class="highlight-blue">ERROR</span>(<span class="highlight-green">"Insufficient_Resource_Allocation"</span>);</p>
+                        </div>
+                        <p class="decrypt-text" data-text="Pengalaman saya, meskipun belum formal, diperkaya oleh proyek mandiri, partisipasi aktif dalam organisasi kampus, dan mengikuti program Studi Independen Bersertifikat seperti Bangkit Academy. Semua ini membentuk saya menjadi individu yang proaktif, mampu bekerja dalam tim, dan siap menghadapi tantangan dunia profesional." data-decrypt-speed="15">
+                            Pengalaman saya, meskipun belum formal, diperkaya oleh proyek mandiri, partisipasi aktif dalam organisasi kampus, dan mengikuti program Studi Independen Bersertifikat seperti Bangkit Academy. Semua ini membentuk saya menjadi individu yang proaktif, mampu bekerja dalam tim, dan siap menghadapi tantangan dunia profesional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-content animate-on-scroll">
+                <h2 class="section-title-animate decrypt-text animate-on-scroll" data-text="Skillset Analysis: AI & Development" data-aos="fade-up" data-aos-delay="200">Skillset Analysis: <span class="highlight-blue">AI & Development</span></h2>
+                <div class="skills-grid-wrapper">
+                    <div class="skills-grid">
+                        <div class="skill-card animate-on-scroll" tabindex="0" data-hover-title="Machine Learning" data-hover-value="90%" data-hover-desc="Supervised, Unsupervised, Reinforcement Learning Algorithms with practical application." data-aos="zoom-in" data-aos-delay="300">
+                            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                            <h3 class="skill-title">Machine Learning</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Scikit-learn</span><span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span>
+                            </div>
+                            <div class="skill-level-bar"><div style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-card animate-on-scroll" tabindex="0" data-hover-title="Deep Learning" data-hover-value="85%" data-hover-desc="CNNs, RNNs, Transformers. Building complex model architectures." data-aos="zoom-in" data-aos-delay="400">
+                            <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                            <h3 class="skill-title">Deep Learning</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">TensorFlow</span><span class="skill-tag">Keras</span><span class="skill-tag">PyTorch</span>
+                            </div>
+                            <div class="skill-level-bar"><div style="width: 85%;"></div></div>
+                        </div>
+                        <div class="skill-card animate-on-scroll" tabindex="0" data-hover-title="Programming Languages" data-hover-value="95%" data-hover-desc="Strong proficiency in Python for data science, backend, and scripting." data-aos="zoom-in" data-aos-delay="500">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <h3 class="skill-title">Programming Languages</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">C++</span>
+                            </div>
+                            <div class="skill-level-bar"><div style="width: 95%;"></div></div>
+                        </div>
+                        <div class="skill-card animate-on-scroll" tabindex="0" data-hover-title="Data & Database" data-hover-value="80%" data-hover-desc="Database Design, Query Optimization, Data Integration and management." data-aos="zoom-in" data-aos-delay="600">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h3 class="skill-title">Data & Database</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">MySQL</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">MongoDB</span>
+                            </div>
+                            <div class="skill-level-bar"><div style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-card animate-on-scroll" tabindex="0" data-hover-title="Tools & Platforms" data-hover-value="75%" data-hover-desc="Familiarity with deployment, version control, and cloud platforms." data-aos="zoom-in" data-aos-delay="700">
+                            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                            <h3 class="skill-title">Tools & Platforms</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Google Colab</span><span class="skill-tag">Jupyter</span><span class="skill-tag">Git</span>
+                            </div>
+                            <div class="skill-level-bar"><div style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-card animate-on-scroll" tabindex="0" data-hover-title="Certifications & Concepts" data-hover-value="92%" data-hover-desc="Formal training and practical application validation for advanced AI concepts." data-aos="zoom-in" data-aos-delay="800">
+                            <div class="skill-icon"><i class="fas fa-award"></i></div>
+                            <h3 class="skill-title">Certifications & Concepts</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Bangkit Academy</span><span class="skill-tag">MLOps</span><span class="skill-tag">Deployment</span>
+                            </div>
+                            <div class="skill-level-bar"><div style="width: 92%;"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-info-overlay animate-on-scroll" data-aos="fade-up" data-aos-delay="900">
+                        <p class="info-title highlight-blue">HOVER_STAT:</p>
+                        <p class="info-value highlight-green" id="skill-overlay-value">--</p>
+                        <p class="info-desc highlight-purple" id="skill-overlay-desc">Hover over a skill module for detailed analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-content animate-on-scroll">
+                <h2 class="section-title-animate decrypt-text animate-on-scroll" data-text="Project Portfolio: Executing Protocols" data-aos="fade-up" data-aos-delay="200">Project Portfolio: <span class="highlight-green">Executing Protocols</span></h2>
+                <div class="filter-buttons-container animate-on-scroll" data-aos="fade-up" data-aos-delay="300">
+                    <button class="filter-btn active" data-filter="all">ALL</button>
+                    <button class="filter-btn" data-filter="computer-vision">COMPUTER VISION</button>
+                    <button class="filter-btn" data-filter="nlp">NLP</button>
+                    <button class="filter-btn" data-filter="machine-learning">MACHINE LEARNING</button>
+                    <button class="filter-btn" data-filter="web-dev">WEB DEVELOPMENT</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card project-item animate-on-scroll" tabindex="0" data-category="computer-vision deep-learning machine-learning" data-modal-image="https://via.placeholder.com/800x600/00DFFF/070D1C?text=Plant+Predictor+Modal" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-image-placeholder">
+                            <img src="assets/project-1.jpg" alt="Plant Disease Predictor Project" class="project-image modal-trigger">
+                        </div>
+                        <div class="project-header">
+                            <h3 class="project-title">Plant Disease Predictor</h3>
+                            <p class="project-type highlight-blue">Computer Vision / Deep Learning</p>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-desc">
+                                Mengembangkan model <span class="highlight-green">CNN</span> untuk mengidentifikasi penyakit pada daun tanaman dari gambar, membantu deteksi dini.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span><span class="tech-tag">TensorFlow</span><span class="tech-tag">Keras</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/DedenHadiguna/Leaf-Disease-Prediction" target="_blank" class="project-link" aria-label="GitHub Repository for Plant Disease Predictor"><i class="fab fa-github"></i> REPO</a>
+                                <span class="project-link disabled" aria-disabled="true" title="Demo coming soon"><i class="fas fa-play-circle"></i> DEMO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card project-item animate-on-scroll" tabindex="0" data-category="nlp machine-learning" data-modal-image="https://via.placeholder.com/800x600/B200FF/070D1C?text=Sentiment+Analysis+Modal" data-aos="fade-up" data-aos-delay="500">
+                        <div class="project-image-placeholder">
+                            <img src="assets/project-2.jpg" alt="Movie Review Sentiment Analysis Project" class="project-image modal-trigger">
+                        </div>
+                        <div class="project-header">
+                            <h3 class="project-title">Movie Review Sentiment Analysis</h3>
+                            <p class="project-type highlight-blue">NLP</p>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-desc">
+                                Membangun sistem analisis sentimen untuk mengklasifikasikan ulasan film (positif/negatif/netral) menggunakan teknik <span class="highlight-green">NLP</span>.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span><span class="tech-tag">NLTK</span><span class="tech-tag">Scikit-learn</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/DedenHadiguna/Movie-Review-Sentiment-Analysis" target="_blank" class="project-link" aria-label="GitHub Repository for Movie Review Sentiment Analysis"><i class="fab fa-github"></i> REPO</a>
+                                <span class="project-link disabled" aria-disabled="true" title="Report coming soon"><i class="fas fa-chart-line"></i> REPORT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card project-item animate-on-scroll" tabindex="0" data-category="machine-learning data-mining" data-aos="fade-up" data-aos-delay="600">
+                        <div class="project-image-placeholder">
+                            <img src="https://via.placeholder.com/300x200/39FF14/070D1C?text=Music+Recommender" alt="Music Recommendation System Project">
+                        </div>
+                        <div class="project-header">
+                            <h3 class="project-title">Music Recommendation System</h3>
+                            <p class="project-type highlight-blue">Machine Learning / Data Mining</p>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-desc">
+                                Mengembangkan sistem rekomendasi musik berbasis <span class="highlight-green">collaborative filtering</span> dan <span class="highlight-green">content-based</span>.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">Implicit</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/DedenHadiguna/Music-Recommendation-System" target="_blank" class="project-link" aria-label="GitHub Repository for Music Recommendation System"><i class="fab fa-github"></i> REPO</a>
+                                <span class="project-link disabled" aria-disabled="true" title="Live demo coming soon"><i class="fas fa-music"></i> DEMO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card project-item animate-on-scroll" tabindex="0" data-category="web-dev frontend" data-aos="fade-up" data-aos-delay="700">
+                        <div class="project-image-placeholder">
+                            <img src="https://via.placeholder.com/300x200/EBF2F8/070D1C?text=Portfolio+Interface" alt="Interactive Portfolio Interface Project">
+                        </div>
+                        <div class="project-header">
+                            <h3 class="project-title">Interactive Portfolio Interface</h3>
+                            <p class="project-type highlight-blue">Web Development / Frontend</p>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-desc">
+                                Antarmuka portofolio ini sendiri, dirancang dengan <span class="highlight-green">HTML, CSS, dan JavaScript</span> untuk pengalaman unik.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-current="location" aria-label="Live Site for Interactive Portfolio (You are here!)"><i class="fas fa-globe"></i> LIVE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="photos" class="section">
+            <div class="section-content animate-on-scroll">
+                <h2 class="section-title-animate decrypt-text animate-on-scroll" data-text="Visual Data: Personal Moments" data-aos="fade-up" data-aos-delay="200">Visual Data: <span class="highlight-purple">Personal Moments</span></h2>
+                <div class="photo-grid">
+                    <div class="photo-item animate-on-scroll" tabindex="0" data-modal-image="https://via.placeholder.com/800x600/00DFFF/070D1C?text=Photo+1+Modal" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://via.placeholder.com/400x300/00DFFF/070D1C?text=Photo+1" alt="Personal Photo 1" class="modal-trigger">
+                        <div class="photo-overlay">Campus Life</div>
+                    </div>
+                    <div class="photo-item animate-on-scroll" tabindex="0" data-modal-image="https://via.placeholder.com/800x600/B200FF/070D1C?text=Photo+2+Modal" data-aos="fade-up" data-aos-delay="400">
+                        <img src="https://via.placeholder.com/400x300/B200FF/070D1C?text=Photo+2" alt="Personal Photo 2" class="modal-trigger">
+                        <div class="photo-overlay">Learning Session</div>
+                    </div>
+                    <div class="photo-item animate-on-scroll" tabindex="0" data-modal-image="https://via.placeholder.com/800x600/39FF14/070D1C?text=Photo+3+Modal" data-aos="fade-up" data-aos-delay="500">
+                        <img src="https://via.placeholder.com/400x300/39FF14/070D1C?text=Photo+3" alt="Personal Photo 3" class="modal-trigger">
+                        <div class="photo-overlay">Group Project</div>
+                    </div>
+                    <div class="photo-item animate-on-scroll" tabindex="0" data-modal-image="https://via.placeholder.com/800x600/EBF2F8/070D1C?text=Photo+4+Modal" data-aos="fade-up" data-aos-delay="600">
+                        <img src="https://via.placeholder.com/400x300/EBF2F8/070D1C?text=Photo+4" alt="Personal Photo 4" class="modal-trigger">
+                        <div class="photo-overlay">Tech Event</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="section">
+            <div class="section-content animate-on-scroll">
+                <h2 class="section-title-animate decrypt-text animate-on-scroll" data-text="Validation Records: Certifications" data-aos="fade-up" data-aos-delay="200">Validation Records: <span class="highlight-green">Certifications</span></h2>
+                <div class="certificates-grid">
+                    <div class="certificate-item animate-on-scroll" tabindex="0" data-modal-image="deden_hadiguna_general_cert.jpg" data-aos="fade-up" data-aos-delay="300">
+                        <img src="deden_hadiguna_general_cert.jpg" alt="Sertifikat Deden Hadiguna" title="Sertifikat Umum Deden Hadiguna" class="modal-trigger">
+                        <div class="cert-title">Sertifikat Umum Deden Hadiguna</div>
+                    </div>
+                    <div class="certificate-item animate-on-scroll" tabindex="0" data-modal-image="azure_ai_fundamentals.jpg" data-aos="fade-up" data-aos-delay="400">
+                        <img src="azure_ai_fundamentals.jpg" alt="Sertifikat Azure AI Fundamentals" title="Azure AI Fundamentals" class="modal-trigger">
+                        <div class="cert-title">Azure AI Fundamentals</div>
+                    </div>
+                    <div class="certificate-item animate-on-scroll" tabindex="0" data-modal-image="webinar_rise_intelligent_future.jpg" data-aos="fade-up" data-aos-delay="500">
+                        <img src="webinar_rise_intelligent_future.jpg" alt="Sertifikat Webinar Rise an Intelligent Future" title="Webinar Rise an Intelligent Future" class="modal-trigger">
+                        <div class="cert-title">Webinar Rise an Intelligent Future</div>
+                    </div>
+                    <div class="certificate-item animate-on-scroll" tabindex="0" data-modal-image="assets/sertifikat-1.jpg" data-aos="fade-up" data-aos-delay="600"> <img src="assets/sertifikat-1.jpg" alt="Sertifikat Web Dev" class="modal-trigger">
+                        <div class="cert-title">Sertifikat Web Dev</div>
+                    </div>
+                     <div class="certificate-item animate-on-scroll" tabindex="0" data-modal-image="assets/sertifikat-2.jpg" data-aos="fade-up" data-aos-delay="700"> <img src="assets/sertifikat-2.jpg" alt="Sertifikat JavaScript" class="modal-trigger">
+                        <div class="cert-title">Sertifikat JavaScript</div>
+                    </div>
+                    <div class="certificate-item animate-on-scroll" tabindex="0" data-modal-image="https://via.placeholder.com/800x600/B200FF/070D1C?text=Sertifikat+Lain" data-aos="fade-up" data-aos-delay="800">
+                        <img src="https://via.placeholder.com/300x200/B200FF/070D1C?text=Sertifikat+Lain" alt="Sertifikat Lain" class="modal-trigger">
+                        <div class="cert-title">Sertifikat Lain</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="section-content animate-on-scroll">
+                <h2 class="section-title-animate decrypt-text animate-on-scroll" data-text="Education & Activity Records" data-aos="fade-up" data-aos-delay="200">Pendidikan & <span class="highlight-purple">Catatan Aktivitas</span></h2>
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item animate-on-scroll" data-aos="fade-right" data-aos-delay="300">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Telkom University Purwokerto</h3>
+                            <p class="timeline-period highlight-blue">2023 - Sekarang</p>
+                            <p class="timeline-role highlight-green">Mahasiswa Teknik Informatika</p>
+                            <p class="timeline-desc">
+                                Sedang menempuh gelar Sarjana dengan fokus pada Struktur Data, Algoritma, Basis Data, dan mata kuliah khusus Kecerdasan Buatan. Aktif dalam proyek kelompok dan pengembangan diri.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animate-on-scroll" data-aos="fade-right" data-aos-delay="400">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Asisten Dosen: Kalkulus</h3>
+                            <p class="timeline-period highlight-blue">September 2023 - Maret 2024</p>
+                            <p class="timeline-role highlight-green">Telkom University Purwokerto</p>
+                            <p class="timeline-desc">
+                                Membantu dosen dalam sesi praktik dan memberikan bimbingan untuk mata kuliah Kalkulus. Bertanggung jawab atas evaluasi tugas dan pemahaman mahasiswa.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animate-on-scroll" data-aos="fade-right" data-aos-delay="500">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Bangkit Academy oleh Google, GoTo, Traveloka</h3>
+                            <p class="timeline-period highlight-blue">February 2024 - April 2024</p>
+                            <p class="timeline-role highlight-green">Kohort Insinyur Pembelajaran Mesin</p>
+                            <p class="timeline-desc">
+                                Program intensif yang mencakup Python untuk ML, Dasar-dasar Pembelajaran Mesin, Arsitektur Pembelajaran Mendalam, dan Implementasi Model AI menggunakan Google Cloud Platform (GCP). Menyelesaikan proyek akhir tim.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animate-on-scroll" data-aos="fade-right" data-aos-delay="600">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Lulusan Sekolah Menengah Atas</h3>
+                            <p class="timeline-period highlight-blue">2020 - 2023</p>
+                            <p class="timeline-role highlight-green">SMA Negeri 1 CabangBungin</p>
+                            <p class="timeline-desc">
+                                Lulus dari program Ilmu Pengetahuan Alam. Aktif terlibat dalam kegiatan Teknologi Informasi dan Komunikasi (TIK).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="section-content animate-on-scroll">
+                <h2 class="section-title-animate decrypt-text animate-on-scroll" data-text="Connection Online: Reach Out" data-aos="fade-up" data-aos-delay="200">Koneksi Aktif: <span class="highlight-green">Hubungi Saya</span></h2>
+                <p class="section-description contact-intro-text animate-on-scroll" data-aos="fade-up" data-aos-delay="300">
+                    Tertarik untuk berkolaborasi dalam proyek AI, berdiskusi tentang inovasi teknologi, atau memiliki peluang yang ingin Anda bagikan? Jangan ragu untuk menghubungi saya! Saya selalu terbuka untuk koneksi baru.
+                </p>
+                <div class="contact-grid">
+                    <div class="contact-card animate-on-scroll" tabindex="0" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3 class="contact-title">Email</h3>
+                        <p class="contact-info"><a href="mailto:dedenhadigun@gmail.com">dedenhadigun@gmail.com</a></p>
+                    </div>
+                    <div class="contact-card animate-on-scroll" tabindex="0" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <h3 class="contact-title">LinkedIn</h3>
+                        <p class="contact-info"><a href="https://linkedin.com/in/dedenhadiguna" target="_blank">linkedin.com/in/dedenhadiguna</a></p>
+                    </div>
+                    <div class="contact-card animate-on-scroll" tabindex="0" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <h3 class="contact-title">GitHub</h3>
+                        <p class="contact-info"><a href="https://github.com/DedenHadiguna" target="_blank">github.com/DedenHadiguna</a></p>
+                    </div>
+                    <div class="contact-card animate-on-scroll" tabindex="0" data-aos="zoom-in" data-aos-delay="700">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <h3 class="contact-title">Telepon</h3>
+                        <p class="contact-info">+62 851-7319-3389</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/dedenhadiguna" target="_blank" class="social-link" title="LinkedIn" aria-label="Visit Deden Hadiguna's LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/DedenHadiguna" target="_blank" class="social-link" title="GitHub" aria-label="Visit Deden Hadiguna's GitHub Profile"><i class="fab fa-github"></i></a>
+                <a href="mailto:dedenhadigun@gmail.com" class="social-link" title="Email" aria-label="Send an email to Deden Hadiguna"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; <span id="current-year-placeholder"></span> Deden Hadiguna. All systems operational.</p>
+        </div>
+    </footer>
+
+    <div id="image-modal" class="modal">
+        <span class="close-button" aria-label="Close image view" tabindex="0">&times;</span>
+        <div class="modal-content">
+            <img id="modal-image-display" src="" alt="" class="modal-img">
+            <div id="modal-caption" class="modal-caption"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            mirror: false
+        });
+    </script>
+    <script src="ai-core-script.js"></script>
+</body>
+</html>
